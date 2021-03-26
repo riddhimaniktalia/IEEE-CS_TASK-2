@@ -5,9 +5,6 @@
 *:focus {
     outline: none !important;
 }
-html {
-    scroll-behavior: smooth;
-}
 
 body {
   background: #FC466B;  /* fallback for old browsers */
@@ -23,21 +20,6 @@ overflow-x: hidden;
     justify-items: center;
     height: 100vh;
 }
-.row1 {
-    width: 100%;
-    margin: auto;
-    height: fit-content;
-    display: flex;
-    flex-direction: row;
-
-}
-
-.column {
-    margin: auto;
-    color: #150159;
-    height: 450px;
-    width: 100%;
-}
 
 .stepcard {
     height: 400px;
@@ -49,9 +31,26 @@ overflow-x: hidden;
     transition: 0.5s all ease-in-out;
     margin-top: 10px !important;
 }
+
 .stepcard:hover {
     transform: scale(1.1);
 }
+
+.row1 {
+    width: 100%;
+    margin: auto;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+}
+
+.column {
+    margin: auto;
+    color: #150159;
+    height: 450px;
+    width: 100%;
+}
+
 .real-img{
     border-radius: 50%;
     display: block;
@@ -60,9 +59,19 @@ overflow-x: hidden;
     margin-left: 0px;
     padding: 0px;
 }
+
 .real-img:hover{
     transform: scale(1.1);
 }
+
+.real-img {
+    margin: 0px;
+    padding: 0;
+    box-shadow: none;
+    height: 150px;
+    width: 150px;
+}
+
 .stepcount {
     color: #150159;
     margin: 0px auto;
@@ -71,38 +80,6 @@ overflow-x: hidden;
     padding-bottom: 5px;
     font-family: 'Lobster', cursive;
     width: fit-content;
-}
-.mask-img {
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
-    box-shadow: 2px -0px 20px #744FB1 inset;
-    background: #212121;
-    margin: 0px auto;
-    position: relative;
-    top: 30px;
-}
-.real-img {
-    margin: 0px;
-    padding: 0;
-    box-shadow: none;
-    height: 150px;
-    width: 150px;
-}
-.real-img-div {
-    width: fit-content;
-}
-.part1-img, .part2-img {
-    position: relative;
-    top: -120px;
-    left: 63px;
-}
-.part2-img {
-    left: 75px;
-}
-.part1-img {
-  height: 175px;
-  width: 175px;
 }
 .card-img {
     height: 50%;
@@ -129,6 +106,37 @@ overflow-x: hidden;
     font-family: 'Lobster', cursive;
     margin-top: 20px;
 }
+
+.mask-img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    box-shadow: 2px -0px 20px #744FB1 inset;
+    background: #212121;
+    margin: 0px auto;
+    position: relative;
+    top: 30px;
+}
+.part1-img {
+  height: 175px;
+  width: 175px;
+}
+
+.part1-img, .part2-img {
+    position: relative;
+    top: -120px;
+    left: 63px;
+}
+
+.part2-img {
+    left: 75px;
+}
+
+.real-img-div {
+    width: fit-content;
+}
+
+
 
 .content2 {
     max-width: 180px;
