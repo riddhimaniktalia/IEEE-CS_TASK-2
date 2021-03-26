@@ -47,6 +47,7 @@ overflow-x: hidden;
     box-shadow: 5px 5px 10px #744FB1 ;
     margin: 0px auto;
     transition: 0.5s all ease-in-out;
+    margin-top: 10px !important;
 }
 .stepcard:hover {
     transform: scale(1.1);
